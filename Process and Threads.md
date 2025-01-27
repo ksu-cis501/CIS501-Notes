@@ -1,5 +1,5 @@
-### Presentation 1: **Processes and Threads Overview**  
-#### Slide 1: What Are Processes and Threads?  
+**Processes and Threads Overview**  
+#### What Are Processes and Threads?  
 **Processes**  
 - A process is an executing program with a unique virtual memory space.  
 - Contains code (instructions), global variables, heap (dynamic memory), and stack (local variables).  
