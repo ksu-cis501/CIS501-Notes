@@ -1,4 +1,4 @@
-**Processes and Threads Overview**  
+# H2 Processes and Threads Overview
 #### What Are Processes and Threads?  
 **Processes**  
 - A process is an executing program with a unique virtual memory space.  
