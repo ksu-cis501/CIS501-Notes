@@ -15,7 +15,7 @@
 
 ---
 
-#### Slide 2: Key Similarities and Differences  
+#### Key Similarities and Differences  
 **Similarities**  
 - Both are execution units managed by the operating system.  
 - Both have states indicating their current status.  
@@ -28,8 +28,8 @@
 
 ---
 
-### Presentation 2: **Processes and Threads in Action**  
-#### Slide 1: Examples of Processes and Threads  
+**Processes and Threads in Action**  
+#### Examples of Processes and Threads  
 **Example 1: A Web Browser**  
 - Process: Web browser application.  
 - Threads:  
@@ -46,7 +46,7 @@
 
 ---
 
-#### Slide 2: The Role of the OS and Scheduler  
+#### The Role of the OS and Scheduler  
 **Operating System (OS):**  
 - Manages the creation, execution, and termination of processes and threads.  
 - Allocates resources to processes (e.g., memory, I/O, CPU time).  
@@ -58,8 +58,8 @@
 
 ---
 
-### Presentation 3: **How Processes and Threads Work**  
-#### Slide 1: States of Processes and Threads  
+### **How Processes and Threads Work**  
+#### States of Processes and Threads  
 **Process States:**  
 1. **New**: Process is being created.  
 2. **Ready**: Process is waiting to execute.  
@@ -75,7 +75,7 @@
 
 ---
 
-#### Slide 2: Key Concepts in Execution  
+#### Key Concepts in Execution  
 - **Processes** own resources such as memory, files, and network connections.  
 - **Threads** share resources within the process but execute independently.  
 - **Multithreading** allows multiple threads within a process to execute concurrently, improving performance.  
