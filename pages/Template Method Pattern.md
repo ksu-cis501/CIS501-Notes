@@ -143,3 +143,44 @@ collapsed:: true
 	- Encourages a clean separation between **what varies** and **what stays the same**, improving design quality.
 	  
 	  ---
+- ### Discussion
+  collapsed:: true
+  
+  ---
+	- #### 1.  What would happen if the base class’s  `TemplateMethod()`  were made  `virtual`  instead of  `non-virtual` ?
+	  collapsed:: true
+		- **Answer:**
+			- Subclasses could override the entire algorithm, defeating the purpose of the pattern.
+			- So, the template method must remain **non-virtual** to preserve the algorithm structure and enforce consistency.
+			  
+			  ---
+	- #### 2. When might using the Template Method pattern be  **overkill** ?
+	  collapsed:: true
+		- **Answer:**
+			- When there’s **only one** concrete implementation or the algorithm is **unlikely to vary**.
+			- In such cases, an abstract class hierarchy adds unnecessary complexity.
+			  
+			  ---
+	- #### 3. How is this pattern related to the  **Open/Closed Principle (OCP)** ?
+	  collapsed:: true
+		- **Answer:**
+			- It supports OCP by allowing new subclasses (new behaviors) to be **added without modifying existing code**.
+			- The algorithm structure is closed to modification but open to extension.
+			  
+			  ---
+	- #### 4. Could we use  **interfaces**  instead of an abstract base class here?
+	  collapsed:: true
+		- **Answer:**
+			- Not effectively.
+			- Interfaces can define *what* methods exist but not the **order or structure** of the algorithm.
+			- The Template Method pattern requires a **concrete flow**, which an abstract class provides.
+			  
+			  ---
+	- #### 5. How does this pattern compare to the  **Strategy pattern** ?
+	  collapsed:: true
+		- **Answer:**
+			- **Template Method:** defines the algorithm structure in one place and lets subclasses fill in steps.
+			- **Strategy:** delegates the entire algorithm to interchangeable objects.
+			- In short, Template Method = **inheritance-based**, Strategy = **composition-based**.
+			  
+			  ---
